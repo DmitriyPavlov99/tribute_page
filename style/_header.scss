@@ -1,0 +1,37 @@
+.header {
+  width: 100%;
+  background-color: #337AB7;
+  height: 50px;
+  position: fixed;
+}
+.links {
+  display: flex;
+  height: 100%;
+  align-items: center;
+  justify-content: flex-end;
+  gap: 20px;
+  width: 98%;
+  .links__set {
+    display: flex;
+    font-size: 26px;
+    text-decoration: none;
+    align-items: center;
+    color: white;
+    height: 100%;
+    font-family: $font-main-project;
+    &:hover {
+      background-color: white;
+      color: black;
+      transition: 0.7s;
+    }
+  }
+}
+
+@media (max-width: 500px) {
+  .links {
+    justify-content: center;
+    .links__set {
+      font-size: 20px;
+    }
+  }
+}
